@@ -2,7 +2,7 @@
 ---
 Profiles:
 
-    FourOrgOrdererGenesis:
+    ThreeOrgOrdererGenesis:
         Orderer:
             <<: *OrdererDefaults
             Organizations:
@@ -13,7 +13,7 @@ Profiles:
                     - *Org1
                     - *Org2
                     - *Org3
-    FourOrgChannel:
+    ThreeOrgChannel:
         Consortium: SampleConsortium
         Application:
             <<: *ApplicationDefaults

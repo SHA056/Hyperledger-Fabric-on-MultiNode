@@ -49,6 +49,11 @@ function generateChannelArtifacts() {
     echo "configtxgen tool not found. exiting"
     exit 1
   fi
+  
+  echo "##########################################################"
+  echo "#########  Create channel-artifacts folder  ##############"
+  echo "##########################################################"
+  mkdir channel-artifacts
 
   echo "##########################################################"
   echo "#########  Generating Orderer Genesis block ##############"
@@ -106,7 +111,7 @@ function generateChannelArtifacts() {
 CLI_TIMEOUT=60
 #default for delay
 CLI_DELAY=3
-# channel name defaults to "maharachannel". It can be overridden.
+# channel name defaults to "smchannel". It can be overridden.
 CHANNEL_NAME="smchannel"
 
 # asks for confirmation to proceed
